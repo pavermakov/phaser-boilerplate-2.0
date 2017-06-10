@@ -24,7 +24,7 @@ const config = {
 	},
 };
 
-config.size.width *= window.devicePixelRatio;
-config.size.height *= window.devicePixelRatio;
+config.size.width = Math.ceil(config.size.width * window.devicePixelRatio);
+config.size.height = Math.ceil(config.size.height * window.devicePixelRatio);
 
 export default config;
