@@ -1,5 +1,6 @@
 import Phaser from 'phaser';
 import WebFont from 'webfontloader';
+import { data } from './settings';
 
 export default class extends Phaser.State {
 	init() {
@@ -11,7 +12,7 @@ export default class extends Phaser.State {
 	}
 
 	preload() {
-
+		this._loadAssets();
 	}
 
 	_initPreloadBar() {
@@ -30,5 +31,9 @@ export default class extends Phaser.State {
 			transform: 'translate(-50%)',
 			'-webkit-transform': 'translate(-50%)',
 		});
+	}
+
+	_loadAssets() {
+
 	}
 }
